@@ -3,7 +3,7 @@ Shared.MaxFrequency = 500.00 -- Max Limit of Radio Channel
 Shared.Jammer = {
     state = true, -- to use jammer system or not 
     model = 'm23_2_prop_m32_jammer_01a', -- prop to spawn for jammer
-    permission = {"police"}, -- permission how can setup jammer (job/gang)
+    permission = {"police", "bcso", "sasp", "sapr"}, -- permission how can setup jammer (job/gang)
     default = {}, -- default jammer setup location 
     range = {
         min = 10.0,
@@ -15,7 +15,6 @@ Shared.Jammer = {
 
 Shared.RadioItem = {
     'radio',
-    'wrench'
 }
 
 Shared.Battery = {
@@ -25,86 +24,68 @@ Shared.Battery = {
 }
 
 Shared.RadioNames = {
-    ["1"] = "MRPD CH#1", -- channel value 1
-    ["1.%"] = "MRPD CH#1", -- channel value 1.%%%% string formatter
-    ["2"] = "MRPD CH#2",
-    ["2.%"] = "MRPD CH#2",
-    ["3"] = "MRPD CH#3",
-    ["3.%"] = "MRPD CH#3",
-    ["4"] = "MRPD CH#4",
-    ["4.%"] = "MRPD CH#4",
-    ["5"] = "MRPD CH#5",
-    ["5.%"] = "MRPD CH#5",
-    ["6"] = "MRPD CH#6",
-    ["6.%"] = "MRPD CH#6",
-    ["7"] = "MRPD CH#7",
-    ["7.%"] = "MRPD CH#7",
-    ["8"] = "MRPD CH#8",
-    ["8.%"] = "MRPD CH#8",
-    ["9"] = "MRPD CH#9",
-    ["9.%"] = "MRPD CH#9",
-    ["10"] = "MRPD CH#10",
-    ["10.%"] = "MRPD CH#10",
-    ["420"] = "Ballas CH#1",
-    ["420.%"] = "Ballas CH#1",
-    ["421"] = "LostMC CH#1",
-    ["421.%"] = "LostMC CH#1",
-    ["422"] = "Vagos CH#1",
-    ["422.%"] = "Vagos CH#1",
+    ["1"] = "LSPD CH#1", -- channel value 1
+    ["1.%"] = "LSPD CH#1", -- channel value 1.%%%% string formatter
+    ["2"] = "LSPD CH#2",
+    ["2.%"] = "LSPD CH#2",
+    ["3"] = "BCSO CH#3",
+    ["3.%"] = "BCSO CH#3",
+    ["4"] = "BCSO CH#4",
+    ["4.%"] = "BCSO CH#4",
+    ["5"] = "SASP CH#5",
+    ["5.%"] = "SASP CH#5",
+    ["6"] = "SASP CH#6",
+    ["6.%"] = "SASP CH#6",
+    ["7"] = "SAPR CH#7",
+    ["7.%"] = "SAPR CH#7",
+    ["8"] = "SAMS CH#8",
+    ["8.%"] = "SAMS CH#8",
+    ["9"] = "SAFD CH#9",
+    ["9.%"] = "SAFD CH#9",
+    ["10"] = "MISC CH#10",
+    ["10.%"] = "MISC CH#10",
 }
 
 Shared.RestrictedChannels = {
     [1] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [2] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [3] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [4] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [5] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [6] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [7] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [8] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [9] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
     [10] = { -- channel id
         type = 'job', -- job/gang
-        name = {"police", "ambulance"}
-    },
-    [420] = { -- channel id
-        type = 'gang', -- job/gang
-        name = {"ballas"}
-    },
-    [421] = { -- channel id
-        type = 'gang', -- job/gang
-        name = {"lostmc"}
-    },
-    [422] = {
-        type = 'gang', -- job/gang
-        name = {"vagos"}
+        name = {"police", "ambulance", "bcso", "sasp", "sapr"}
     },
 }
 
